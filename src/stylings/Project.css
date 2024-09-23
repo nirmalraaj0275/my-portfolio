@@ -1,0 +1,73 @@
+#projects {
+  padding: 60px 20px; /* Increased padding */
+  background-color: black; /* Slightly different dark background */
+}
+
+#projects h2 {
+  font-size: 3rem; /* Larger heading for Projects */
+  margin-bottom: 30px; /* Space below heading */
+  color: #bb86fc; /* Accent color for heading */
+}
+
+.projects-container {
+  display: flex; /* Flex layout */
+  flex-wrap: wrap; /* Wrap the cards if there are too many */
+  justify-content: center; /* Center the project cards */
+}
+
+.project-card {
+  background-color: #1e1e1e; /* Dark background for the card */
+  border: 1px solid #333; /* Darker border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slight shadow for cards */
+  padding: 20px; /* Padding inside the card */
+  margin: 20px; /* Margin between cards */
+  width: 300px; /* Fixed width for cards */
+  text-align: left; /* Align text to the left */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+.project-card h3 {
+  font-size: 2rem; /* Font size for project titles */
+  color: #bb86fc; /* Accent color for titles */
+  margin-bottom: 10px; /* Space below title */
+}
+
+.project-card p {
+  font-size: 1.2rem; /* Font size for project descriptions */
+  line-height: 1.6; /* Line height for readability */
+  color: #e0e0e0; /* Light grey text */
+  margin-bottom: 15px; /* Space below description */
+}
+
+.project-links {
+  margin-top: 10px; /* Space above links */
+}
+
+.project-links a {
+  color: #bb86fc; /* Accent color for links */
+  font-weight: bold; /* Bold text for links */
+  text-decoration: none; /* Remove underline */
+  margin: 0 10px; /* Space between Live Demo and GitHub links */
+  transition: color 0.2s ease; /* Smooth color change on hover */
+}
+
+.project-links a:hover {
+  color: #9a66d1; /* Darker shade on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Blue link color */
+  font-weight: bold; /* Bold text */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}

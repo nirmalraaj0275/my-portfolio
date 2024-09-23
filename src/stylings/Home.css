@@ -1,0 +1,34 @@
+#home {
+  height: 100vh; /* Full viewport height for Home */
+  background-color: black; /* Dark background */
+  display: flex; /* Flexbox for centering content */
+  flex-direction: column; /* Column layout */
+  align-items: center; /* Center content */
+  justify-content: center; /* Center vertically */
+  padding: 40px 20px; /* Padding around the home section */
+}
+
+#home img {
+  max-width: 50%; /* Set max width to 50% of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add border radius */
+}
+
+#projects,
+#contact,
+#about {
+  background-color: black; /* Very light grey background */
+}
+
+h2 {
+  font-size: 2.5rem; /* Size of the heading */
+  margin-bottom: 20px; /* Margin below the heading */
+  color: white; /* Dark text for headings */
+}
+
+h3 {
+  margin-top: 20px; /* Space above the subsection headers */
+  font-size: 2rem; /* Size for subsection headings */
+  color: white; /* Dark text for subsection headings */
+  align-content: center;
+}

@@ -1,0 +1,107 @@
+#contact {
+  padding: 60px 20px; /* Increased padding for better spacing */
+  background-color: black; /* Dark background for consistency */
+  text-align: center; /* Center the contact details */
+}
+
+#contact h2 {
+  font-size: 3rem; /* Larger heading for Contact */
+  margin-bottom: 30px; /* Space below heading */
+  color: #bb86fc; /* Accent color for heading */
+}
+
+#contact p {
+  font-size: 1.5rem; /* Larger font size for contact details */
+  color: #e0e0e0; /* Light grey text for better readability */
+  margin-bottom: 20px; /* Space between contact details */
+}
+
+#contact a {
+  color: #bb86fc; /* Accent color for links */
+  font-weight: bold; /* Bold text for links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition effect on hover */
+}
+
+#contact a:hover {
+  color: #9a66d1; /* Slightly darker shade on hover */
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+.contact-info {
+  max-width: 600px; /* Restrict the width for better layout */
+  margin: 0 auto; /* Center the contact content */
+  text-align: center; /* Center the text inside the contact section */
+}
+
+.content {
+  display: flex; /* Flexbox for content layout */
+  width: 100%; /* Full width */
+  justify-content: space-between; /* Space between sides */
+}
+
+.left-side {
+  flex: 1; /* Left side takes half */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Padding around text */
+}
+
+.left-side h1 {
+  font-size: 4rem; /* Make the name larger */
+  margin-bottom: 20px; /* Space below the name */
+}
+
+.left-side p {
+  font-size: 1.5rem; /* Increase font size for the paragraph */
+  margin-bottom: 10px; /* Space below the paragraph */
+}
+
+.right-side {
+  flex: 1; /* Right side takes half */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-side img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.tagline {
+  font-size: 1.8rem; /* Font size for tagline */
+  margin: 10px 0; /* Space above and below */
+  color: #d0d0d0; /* Light grey color */
+}
+
+.cta-button {
+  margin-top: 20px; /* Space above button */
+  padding: 10px 20px; /* Button padding */
+  background-color: #bb86fc; /* Button background */
+  color: #fff; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  padding: 12px 25px; /* Increase padding for the button */
+  font-size: 1.2rem; /* Increase font size of the button text */
+}
+
+.cta-button:hover {
+  background-color: #9a66d1; /* Darker shade on hover */
+}
+
+.social-links {
+  margin-top: 20px; /* Space above the links */
+}
+
+.social-links a {
+  color: #bb86fc; /* Link color */
+  margin: 0 10px; /* Space between social links */
+  text-decoration: none; /* Remove underline */
+}
+
+.social-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
