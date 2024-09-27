@@ -1,80 +1,71 @@
 #about {
-  padding: 60px 20px; /* Increased padding */
-  background-color: black; /* Dark background */
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
+  padding: 60px 20px;
+  background-color: white; /* Light background for the section */
 }
 
 .about-content {
-  max-width: 800px; /* Limit width for better readability */
-  margin: 0 auto; /* Center the content */
-  text-align: left; /* Align text to the left */
-  color: #e0e0e0; /* Light grey text */
-  opacity: 0;
-  animation: scaleIn 1.5s ease-in-out forwards;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  color: black;
 }
 
 #about h2 {
-  font-size: 3rem; /* Bigger heading */
-  margin-bottom: 30px; /* Margin below the heading */
-  color: #bb86fc; /* Accent color for About heading */
-  opacity: 0;
-  animation: rotateIn 1s ease-in-out forwards;
+  font-size: 3rem;
+  color: white;
+  width: fit-content;
+  margin: auto;
+  background-color: black; /* Dark background for heading */
+  border-radius: 70px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  transition: transform 0.3s;
+}
+#about h2:hover {
+  transform: scale(1.05);
+}
+.about-content h3 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #343a40; /* Dark color for subheadings */
 }
 
-.about-content h3 {
-  font-size: 2.2rem; /* Subheading font size */
-  margin-bottom: 15px; /* Space below subheadings */
-  color: #bb86fc; /* Accent color for subheadings */
-  opacity: 0;
-  animation: rotateIn 1.2s ease-in-out forwards;
+/* New card style */
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px; /* Space between cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .about-content p {
-  font-size: 1.4rem; /* Bigger font size for paragraphs */
-  line-height: 1.8; /* More spacing between lines */
-  margin-bottom: 20px; /* Space below paragraphs */
-  opacity: 0;
-  animation: scaleIn 1.4s ease-in-out forwards;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.skills-list,
+.interests-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
 }
 
-@keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+.skills-list li,
+.interests-list li {
+  font-size: 1.2rem;
+  color: black;
+  padding: 10px 0;
 }
 
-@keyframes rotateIn {
-  from {
-    opacity: 0;
-    transform: rotate(-10deg);
-  }
-  to {
-    opacity: 1;
-    transform: rotate(0);
-  }
-}
-
-.skills-list li {
-  font-size: 1.6rem; /* Slightly larger font for list items */
-  color: #bb86fc; /* Accent color for skills */
-  padding: 10px 0; /* Space between list items */
-}
-
-.skills-list li::before {
-  font-size: 1.8rem; /* Larger bullet size */
+.icon {
+  margin-right: 10px;
+  color: #f39c12;
 }

@@ -7,8 +7,8 @@ import Contact from "./components/Contact";
 import "./stylings/About.css";
 import "./stylings/Contact.css";
 import "./stylings/Home.css";
-// import "./stylings/Project.css";
-// import "./App.css";
+import "./stylings/Project.css";
+import "./App.css";
 
 const App = () => {
   return (

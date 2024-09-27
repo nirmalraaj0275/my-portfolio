@@ -1,34 +1,165 @@
 #home {
-  height: 100vh; /* Full viewport height for Home */
-  background-color: black; /* Dark background */
-  display: flex; /* Flexbox for centering content */
-  flex-direction: column; /* Column layout */
-  align-items: center; /* Center content */
-  justify-content: center; /* Center vertically */
-  padding: 40px 20px; /* Padding around the home section */
+  height: 100vh; /* Full viewport height */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content at the top */
+  padding: 40px 20px;
 }
 
-#home img {
-  max-width: 50%; /* Set max width to 50% of the container */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional: Add border radius */
+.content {
+  display: flex;
+  width: 100%;
+  max-width: 1300px; /* Maximum width */
+  align-items: center; /* Center content vertically */
+  justify-content: space-between; /* Space between left-side and sidebar */
+  position: relative;
+  height: 100%; /* Ensure full height of parent container */
+  padding-top: 0%;
 }
 
-#projects,
-#contact,
-#about {
-  background-color: black; /* Very light grey background */
+/* Left side */
+.left-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically in the left side */
+  padding: 20px;
 }
 
-h2 {
-  font-size: 2.5rem; /* Size of the heading */
-  margin-bottom: 20px; /* Margin below the heading */
-  color: white; /* Dark text for headings */
+.left-side h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: black;
 }
 
-h3 {
-  margin-top: 20px; /* Space above the subsection headers */
-  font-size: 2rem; /* Size for subsection headings */
-  color: white; /* Dark text for subsection headings */
-  align-content: center;
+.left-side p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: black;
+}
+.left-side h2 {
+  color: black;
+}
+
+/* Right side (Image) */
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  margin-top: 0%; /* Remove margin to avoid misalignment */
+}
+
+.right-side img {
+  max-width: 100%; /* Responsive image */
+  height: 100vh;
+  border-radius: 5px; /* Optional: Add border radius */
+  transition: transform 0.3s;
+}
+
+.right-side img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Sidebar container */
+.sidebar {
+  width: 70px; /* Set the width of the sidebar */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  background-color: black; /* Black background color */
+  color: white; /* White text color for contrast */
+  padding: 10px 0; /* Add padding for spacing */
+  height: 100vh; /* Full height of the viewport */
+  position: fixed; /* Fix it to the viewport */
+  right: 0; /* Align to the right side */
+  top: 0; /* Start from the top */
+  /* border-top-left-radius: 25px; Optional: Curvy top left corner */
+  /* border-bottom-left-radius: 25px; Optional: Curvy bottom left corner */
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for depth */
+  border-radius: 50px;
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: white; /* White text color */
+  text-align: center;
+  margin: 10px 0; /* Space between icons */
+  font-size: 20px; /* Adjust font size for icons */
+  text-decoration: none;
+}
+
+/* Hover effect for links */
+.sidebar a:hover {
+  color: #f39c12; /* Change color on hover */
+  transform: scale(1.05);
+}
+
+/* Remove default list styles */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List item styles */
+.sidebar li {
+  margin: 20px 0; /* Space between list items */
+}
+
+/* Anchor inside list items */
+.sidebar li a {
+  color: white; /* White text color */
+  text-decoration: none;
+  font-size: 1.2rem; /* Icon and text size */
+  display: flex;
+  align-items: center; /* Align icon and text */
+  justify-content: center; /* Center content horizontally within the sidebar */
+}
+
+/* Hover effect for list item links */
+.sidebar li a:hover {
+  color: #f39c12; /* Change color on hover */
+}
+
+/* Icon styles inside list items */
+.sidebar li a svg {
+  margin-right: 0; /* Remove margin between icon and text if only using icons */
+  font-size: 1.5rem; /* Icon size */
+  transform: scale(1.05);
+}
+/* Button */
+.cta-button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 50px;
+}
+
+.cta-button:hover {
+  background-color: #f39c12;
+}
+
+/* Social links */
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: black;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
 }

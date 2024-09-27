@@ -13,28 +13,3 @@ section {
   padding: 40px 20px; /* Padding around the sections */
   text-align: center; /* Center text for all sections */
 }
-
-.navbar {
-  background-color: #1e1e1e; /* Navbar background */
-  padding: 15px 20px; /* Navbar padding */
-}
-
-.navbar ul {
-  list-style-type: none; /* Remove bullets */
-  display: flex; /* Flexbox for navbar */
-  justify-content: center; /* Center the nav items */
-}
-
-.navbar li {
-  margin: 0 15px; /* Space between items */
-}
-
-.navbar a {
-  color: #bb86fc; /* Link color */
-  text-decoration: none; /* Remove underline */
-  font-weight: bold; /* Bold text */
-}
-
-.navbar a:hover {
-  text-decoration: underline; /* Underline on hover */
-}

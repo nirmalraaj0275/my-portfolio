@@ -1,27 +1,38 @@
 #projects {
   padding: 60px 20px; /* Increased padding */
-  background-color: black; /* Slightly different dark background */
+  background-color: #f9f9f9; /* Light background for the section */
 }
 
 #projects h2 {
-  font-size: 3rem; /* Larger heading for Projects */
-  margin-bottom: 30px; /* Space below heading */
-  color: #bb86fc; /* Accent color for heading */
+  font-size: 3rem;
+  color: white;
+  width: fit-content;
+  margin: auto;
+  background-color: black; /* Dark background for heading */
+  border-radius: 70px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  transition: transform 0.3s;
+}
+#projects h2:hover {
+  transform: scale(1.05);
 }
 
 .projects-container {
   display: flex; /* Flex layout */
   flex-wrap: wrap; /* Wrap the cards if there are too many */
   justify-content: center; /* Center the project cards */
+  gap: 20px; /* Space between project cards */
+  height: max-content;
 }
 
 .project-card {
-  background-color: #1e1e1e; /* Dark background for the card */
-  border: 1px solid #333; /* Darker border */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slight shadow for cards */
+  background-color: #fff; /* White background for the card */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
   padding: 20px; /* Padding inside the card */
-  margin: 20px; /* Margin between cards */
+  margin: 10px; /* Margin around cards */
   width: 300px; /* Fixed width for cards */
   text-align: left; /* Align text to the left */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
@@ -29,19 +40,19 @@
 
 .project-card:hover {
   transform: translateY(-10px); /* Slight lift on hover */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
 }
 
 .project-card h3 {
   font-size: 2rem; /* Font size for project titles */
-  color: #bb86fc; /* Accent color for titles */
+  color: #333; /* Darker accent color for titles */
   margin-bottom: 10px; /* Space below title */
 }
 
 .project-card p {
   font-size: 1.2rem; /* Font size for project descriptions */
   line-height: 1.6; /* Line height for readability */
-  color: #e0e0e0; /* Light grey text */
+  color: #666; /* Medium grey text */
   margin-bottom: 15px; /* Space below description */
 }
 
@@ -50,7 +61,7 @@
 }
 
 .project-links a {
-  color: #bb86fc; /* Accent color for links */
+  color: #007bff; /* Blue color for links */
   font-weight: bold; /* Bold text for links */
   text-decoration: none; /* Remove underline */
   margin: 0 10px; /* Space between Live Demo and GitHub links */
@@ -58,16 +69,6 @@
 }
 
 .project-links a:hover {
-  color: #9a66d1; /* Darker shade on hover */
-  text-decoration: underline; /* Underline on hover */
-}
-
-a {
-  text-decoration: none; /* Remove underline */
-  color: #007bff; /* Blue link color */
-  font-weight: bold; /* Bold text */
-}
-
-a:hover {
+  color: #0056b3; /* Darker blue shade on hover */
   text-decoration: underline; /* Underline on hover */
 }

@@ -1,4 +1,3 @@
-// src/components/Projects.js
 import React from "react";
 
 const projects = [
@@ -16,6 +15,7 @@ const projects = [
     link: "https://yourprojectlink.com",
     github: "https://github.com/yourgithub/yoga-center",
   },
+  // Add more projects as needed
 ];
 
 const Projects = () => {

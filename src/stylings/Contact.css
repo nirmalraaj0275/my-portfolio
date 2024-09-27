@@ -1,107 +1,105 @@
 #contact {
-  padding: 60px 20px; /* Increased padding for better spacing */
-  background-color: black; /* Dark background for consistency */
+  padding: 80px 30px; /* Increased padding for more breathing space */
+  background-color: white; /* Darker background for consistency with theme */
   text-align: center; /* Center the contact details */
+  color: #e0e0e0; /* Light grey text for overall readability */
 }
 
 #contact h2 {
-  font-size: 3rem; /* Larger heading for Contact */
-  margin-bottom: 30px; /* Space below heading */
-  color: #bb86fc; /* Accent color for heading */
+  font-size: 3rem;
+  color: white;
+  width: fit-content;
+  margin: auto;
+  background-color: black; /* Dark background for heading */
+  border-radius: 70px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  transition: transform 0.3s;
+}
+#contact h2:hover {
+  transform: scale(1.05);
 }
 
-#contact p {
-  font-size: 1.5rem; /* Larger font size for contact details */
-  color: #e0e0e0; /* Light grey text for better readability */
-  margin-bottom: 20px; /* Space between contact details */
-}
-
-#contact a {
-  color: #bb86fc; /* Accent color for links */
-  font-weight: bold; /* Bold text for links */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s ease; /* Smooth transition effect on hover */
-}
-
-#contact a:hover {
-  color: #9a66d1; /* Slightly darker shade on hover */
-  text-decoration: underline; /* Underline the link on hover */
+#contact h2::after {
+  content: ""; /* Pseudo-element for underline */
+  width: 60px; /* Width of underline */
+  height: 4px; /* Height of underline */
+  background-color: black; /* Accent color for underline */
+  position: absolute; /* Position relative to h2 */
+  bottom: -10px; /* Position below the text */
+  left: 50%; /* Center the underline */
+  transform: translateX(-50%); /* Adjust position */
+  border-radius: 2px; /* Rounded corners */
 }
 
 .contact-info {
-  max-width: 600px; /* Restrict the width for better layout */
+  max-width: 700px; /* Limit the width for a clean layout */
   margin: 0 auto; /* Center the contact content */
-  text-align: center; /* Center the text inside the contact section */
+  padding: 30px; /* Inner padding for better spacing */
+  background-color: white; /* Slightly lighter dark background for separation */
+  border-radius: 12px; /* Rounded corners for the container */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Space between each contact item */
+  transition: transform 0.3s;
+}
+.contact-info:hover {
+  transform: scale(1.05);
+}
+.contact-item {
+  display: flex; /* Flex layout for items */
+  align-items: center; /* Center items vertically */
+  padding: 15px 0; /* Space between contact items */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
-.content {
-  display: flex; /* Flexbox for content layout */
-  width: 100%; /* Full width */
-  justify-content: space-between; /* Space between sides */
+.contact-item:hover {
+  background-color: lightgrey; /* Highlight item on hover */
+  border-radius: 8px; /* Rounded corners on hover */
 }
 
-.left-side {
-  flex: 1; /* Left side takes half */
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center;
-  justify-content: center;
-  padding: 20px; /* Padding around text */
+.contact-item .icon {
+  color: #f39c12; /* Accent color for icons */
+  font-size: 2rem; /* Size of icons */
+  margin-right: 20px; /* Space between icon and text */
 }
 
-.left-side h1 {
-  font-size: 4rem; /* Make the name larger */
-  margin-bottom: 20px; /* Space below the name */
+.contact-item p {
+  font-size: 1.5rem; /* Larger font size for contact details */
+  color: black; /* Light grey text for better readability */
+  margin: 0; /* Remove default margin */
 }
 
-.left-side p {
-  font-size: 1.5rem; /* Increase font size for the paragraph */
-  margin-bottom: 10px; /* Space below the paragraph */
-}
-
-.right-side {
-  flex: 1; /* Right side takes half */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.right-side img {
-  max-width: 100%; /* Responsive image */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.tagline {
-  font-size: 1.8rem; /* Font size for tagline */
-  margin: 10px 0; /* Space above and below */
-  color: #d0d0d0; /* Light grey color */
-}
-
-.cta-button {
-  margin-top: 20px; /* Space above button */
-  padding: 10px 20px; /* Button padding */
-  background-color: #bb86fc; /* Button background */
-  color: #fff; /* Button text color */
+#contact a {
+  color: black; /* Accent color for links */
+  font-weight: bold; /* Bold text for links */
   text-decoration: none; /* Remove underline */
-  border-radius: 5px; /* Rounded corners */
-  padding: 12px 25px; /* Increase padding for the button */
-  font-size: 1.2rem; /* Increase font size of the button text */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
 }
 
-.cta-button:hover {
-  background-color: #9a66d1; /* Darker shade on hover */
+#contact a:hover {
+  color: #f39c12; /* Slightly darker shade on hover */
+  transform: scale(1.05); /* Slight enlargement on hover */
+  /* text-decoration: underline; Underline the link on hover */
 }
 
-.social-links {
-  margin-top: 20px; /* Space above the links */
+.contact-links {
+  display: flex; /* Flex layout for links */
+  justify-content: center; /* Center the links within the section */
+  flex-wrap: wrap; /* Allow links to wrap in smaller screens */
+  gap: 20px; /* Space between the links */
+  margin-top: 30px; /* Space above the links */
 }
 
-.social-links a {
-  color: #bb86fc; /* Link color */
-  margin: 0 10px; /* Space between social links */
-  text-decoration: none; /* Remove underline */
+.contact-links a {
+  padding: 10px 20px; /* Padding for clickable area */
+  border-radius: 8px; /* Rounded corners for buttons */
+  background-color: #282828; /* Background for links */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for buttons */
+  transition: background-color 0.3s ease; /* Smooth background transition */
 }
 
-.social-links a:hover {
-  text-decoration: underline; /* Underline on hover */
+.contact-links a:hover {
+  background-color: black; /* Darker background on hover */
 }
