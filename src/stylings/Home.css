@@ -143,10 +143,12 @@
   width: 50%;
   margin-left: 25%;
   border-radius: 50px;
+  transition: transform 0.3s;
 }
 
 .cta-button:hover {
   background-color: #f39c12;
+  transform: scale(1.5);
 }
 
 /* Social links */

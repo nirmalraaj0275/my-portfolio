@@ -5,6 +5,7 @@ import {
   faUser,
   faProjectDiagram,
   faEnvelope,
+  faCertificate, // Import the certificate icon
 } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
@@ -47,6 +48,11 @@ const Home = () => {
               </a>
             </li>
             <li>
+              <li>
+                <a href="#certificates">
+                  <FontAwesomeIcon icon={faCertificate} />
+                </a>
+              </li>
               <a href="#contact">
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>

@@ -2,31 +2,37 @@ import React from "react";
 
 const certificates = [
   {
+    title: "Basic Coding In Python",
+    issuer: "PrepInsta",
+    date: "February 2024",
+  },
+  {
     title: "Frontend Web Developer",
-    issure: "CodeAlpha",
-    Date: "July 2024",
+    issuer: "CodeAlpha",
+    date: "July 2024",
   },
   {
     title: "MERN Stack Developer",
-    issure: "NextOne Solurion",
-    Date: "September 2024",
+    issuer: "PrepInsta",
+    date: "April 2024",
   },
 ];
 
 const Certificate = () => {
   return (
-    <div>
-      <h2>Certificate</h2>
-      <ul>
+    <div id="certificates">
+      <h2>Certificates</h2>
+      <div className="certificates-container">
         {certificates.map((certificate, index) => (
-          <li key={index}>
+          <div key={index} className="certificate-card">
             <h3>{certificate.title}</h3>
             <p>
-              {certificate.issure}--{certificate.Date}
+              {certificate.issuer} - {certificate.date}
             </p>
-          </li>
+            {/* Add links if available, or any other details */}
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
