@@ -1,5 +1,11 @@
 import React from "react";
-import { FaLaptopCode, FaHiking, FaCamera, FaGithub } from "react-icons/fa";
+import {
+  FaLaptopCode,
+  FaCamera,
+  FaGithub,
+  FaDumbbell,
+  FaBook,
+} from "react-icons/fa";
 
 const About = () => {
   return (
@@ -13,24 +19,29 @@ const About = () => {
             <span style={{ fontWeight: "bold", color: "#f39c12" }}>
               Nirmal Raj R
             </span>
-            , a dedicated Frontend Developer with a vibrant passion for design
-            and an unwavering commitment to creating exceptional user
-            experiences. Armed with a solid background in computer science, I
-            possess a deep understanding of web technologies that empowers me to
-            transform innovative ideas into dynamic, functional realities. I
-            thrive on the challenge of solving complex problems through code and
-            take pride in delivering seamless, visually stunning applications
-            that not only meet client expectations but exceed them.
+            ,a passionate Frontend Developer with a keen interest in mastering
+            backend technologies. My foundation in computer science and web
+            development enables me to build dynamic, responsive interfaces while
+            continuously expanding my backend knowledge to create full-stack
+            solutions. I have worked on a client project where I developed a
+            seamless, visually captivating user experience that not only met but
+            exceeded the client’s needs. I'm driven by the goal of blending
+            intuitive design with technical precision to deliver engaging and
+            high-performing web applications.
           </p>
         </div>
 
         <div className="card">
           <h3>My Journey</h3>
           <p>
-            I started my journey by exploring HTML and CSS, and quickly moved on
-            to JavaScript and React, building dynamic web applications. I joined
-            NextOne Solution as a Frontend Developer, focusing on creating
-            interactive UIs.
+            I began my journey by delving into HTML and CSS, swiftly advancing
+            to JavaScript and React, where I started crafting dynamic web
+            applications. Currently, I am honing my skills as a Frontend
+            Developer at NextOne Solution, where I focus on developing
+            interactive user interfaces that enhance user engagement and
+            experience. This role allows me to combine my passion for design
+            with my technical expertise to create seamless, responsive web
+            solutions.
           </p>
         </div>
 
@@ -57,6 +68,10 @@ const About = () => {
               <FaLaptopCode className="icon" />
               UI/UX Principles
             </li>
+            <li>
+              <FaLaptopCode className="icon" />
+              Python
+            </li>
           </ul>
         </div>
 
@@ -64,8 +79,12 @@ const About = () => {
           <h3>Interests</h3>
           <ul className="interests-list">
             <li>
-              <FaHiking className="icon" />
-              Hiking & Nature Exploration
+              <FaDumbbell className="icon" />
+              Gym & Personal Grooming
+            </li>
+            <li>
+              <FaBook className="icon" />
+              Educating Myself
             </li>
             <li>
               <FaCamera className="icon" />

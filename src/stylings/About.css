@@ -8,6 +8,8 @@
   margin: 0 auto;
   text-align: left;
   color: black;
+  text-justify: newspaper;
+  text-align: justify;
 }
 
 #about h2 {
@@ -49,6 +51,7 @@
   font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 20px;
+  text-justify: auto;
 }
 
 .skills-list,
