@@ -1,0 +1,23 @@
+.certificates-section {
+  padding: 20px;
+  background-color: #2c2c2c; /* Dark theme */
+  color: #fff; /* Light text */
+}
+
+.certificates-section h2 {
+  font-size: 24px;
+}
+
+.certificates-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certificates-section li {
+  margin-bottom: 15px;
+}
+
+.certificates-section a {
+  color: #00aaff;
+  text-decoration: none;
+}
