@@ -5,16 +5,19 @@ const certificates = [
     title: "Basic Coding In Python",
     issuer: "PrepInsta",
     date: "February 2024",
+    certifi: "--->",
   },
   {
     title: "Frontend Web Developer",
     issuer: "CodeAlpha",
     date: "July 2024",
+    certifi: "--->",
   },
   {
     title: "MERN Stack Developer",
     issuer: "PrepInsta",
     date: "April 2024",
+    certifi: "--->",
   },
 ];
 
@@ -30,6 +33,7 @@ const Certificate = () => {
               {certificate.issuer} - {certificate.date}
             </p>
             {/* Add links if available, or any other details */}
+            <p>VEIW{certificate.certifi}</p>
           </div>
         ))}
       </div>
