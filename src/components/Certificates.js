@@ -25,6 +25,7 @@ const Certificate = () => {
   return (
     <div id="certificates">
       <h2>Certificates</h2>
+
       <div className="certificates-container">
         {certificates.map((certificate, index) => (
           <div key={index} className="certificate-card">
